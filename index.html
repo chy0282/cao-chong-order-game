@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>曹沖稱象・排序挑戰</title>
+<meta name="description" content="排列四張步驟圖與動作字詞，一起重溫曹沖稱象的方法。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header><div><h1>曹沖稱象<span>排序挑戰</span></h1></div><button id="fullscreen" class="quiet" type="button">全螢幕 ↗</button></header>
+  <p class="instruction">按事情發生的先後排列。<strong>拖動卡片</strong>，或<strong>點選同一排的兩張卡片交換位置</strong>。</p>
+  <section aria-labelledby="pictures-title"><div class="section-heading"><h2 id="pictures-title"><span class="step-icon">圖</span>排好步驟圖</h2><p>先看圖，想想哪一步最先發生。</p></div><div id="pictures" class="row" role="group" aria-label="步驟圖排序"></div></section>
+  <section aria-labelledby="words-title"><div class="section-heading"><h2 id="words-title"><span class="step-icon">字</span>排好動作字詞</h2><p>再把字詞排好，與上面的圖片對應。</p></div><div id="words" class="row" role="group" aria-label="動作字詞排序"></div></section>
+  <footer><div id="feedback" class="feedback" role="status" aria-live="polite">兩排都排好了嗎？</div><div class="actions"><button id="reset" class="secondary" type="button">↻ 重新挑戰</button><button id="check" class="primary" type="button">檢查答案 <span aria-hidden="true">→</span></button></div></footer>
+</main>
+<script src="game.js"></script>
+</body></html>
